@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:"Roboto", sans-serif;
+  background-color: #d4e09b;
+  color:#96693c;
+  line-height: 1.6;
+}
+.contenido{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, #e9edc9 0%, #a8e675 100%); 
+}
+.portada{
+    background: rgba(89, 170, 100, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(11, 12, 11, 0.1);
+    padding: 40px 20px;
+    border-radius: 24px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 25px 50px -12px rgba(61, 33, 1, 0.918);
+    animation: fadeIn 1.5s ease-out; 
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.portada img{
+    width: 130px;
+    height: 150px;
+    border-radius: 40%;
+    object-fit: cover;
+    border: 4px solid #3a2704;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(122, 77, 9, 0.3);
+}
+h1{
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 3px;
+    color: #5c420b;
+}
+p{
+    font-size: 3rtem;
+    color: #775a23;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent #e9edc9 , transparent);
+    margin-bottom: 20px;
+}
+.btn-link{
+    display: block;
+    background-color: #f4f1bb;
+    color: #a47148;
+    text-decoration: none;
+    padding: 16px;
+    margin: 12px 0;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.btn-link:active{
+    transform: scale(0.95);
+    background-color: #a47148;
+    color: antiquewhite;
+}
+section{
+    padding: 40px 20px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 1.2rem;
+    color: #ecf39e;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contenedor-etiquetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.etiqueta{
+    background: #ecf39e;
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px, solid, #9c6644;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.proyectos-slider{
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+.proyectos-slider::-webkit-scrollbar {display: none;}
+.tarjeta-proyecto{
+    flex: 0 0 160px;
+}
+.tarjeta-proyecto img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.tarjeta-proyecto p {
+    font-size: 0.85rem;
+    color: #f8fafc;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    white-space: nowrap;       
+    overflow: hidden;          
+    text-overflow: ellipsis;  
+}
+.formulario input, .formulario textarea{
+  width: 100%;
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+.btn-enviar{
+  width: 100%;
+  background: #38bdf8;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #0f172a;
+  cursor: pointer;
+  font-size: 1rem; 
+  color: #fff;
+}
+.formulario input, .formulario textarea{
+  width: 100%;
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.btn-enviar{
+  width: 100%;
+  background: #38bdf8;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #0f172a;
+  cursor: pointer;
+  font-size: 1rem; 
+  color: #fff;
+}
+.formulario input, .formulario textarea{
+  width: 100%;
+  background: #cfe1b9;
+  border: 1px solid #82735c;
+  padding: 15px;
+  border-radius: 10px;
+  color: #3d1308;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+.btn-enviar{
+  width: 100%;
+  background: #717744;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #f0f3bd;
+  cursor: pointer;
+  font-size: 1rem; 
+  color: #fff;
+}
+
